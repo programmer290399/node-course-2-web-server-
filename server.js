@@ -59,6 +59,16 @@ app.get('/about', (req,res)=>{
     })
 })
 
+app.get('/portfolio', (req,res)=>{
+    res.render('portfolio.hbs',{
+        pageTitle : 'Portfolio Page',
+        welcomeMsg :"Projects appear here"
+
+        
+    })
+})
+
+
 app.get('/bad',(req,res)=>{
     res.send({errorMessage : 'Unable to complete the request'})
 })
