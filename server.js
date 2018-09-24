@@ -21,14 +21,14 @@ app.use((req,res,next)=>{
     next()
 })
 
-app.use((req , res , next)=>{
-    res.render('maintainence.hbs',{
-        pageTitle : "Sorry !!",
+// app.use((req , res , next)=>{
+//     res.render('maintainence.hbs',{
+//         pageTitle : "Sorry !!",
         
-        welcomeMsg :"The site is under maintainence :( , we will be back soon "
-    })
+//         welcomeMsg :"The site is under maintainence :( , we will be back soon "
+//     })
 
-})
+// })
 
 app.use(express.static(__dirname + '/public'))
 
